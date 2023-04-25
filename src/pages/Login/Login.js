@@ -149,17 +149,6 @@ const Login = () => {
             </button>
           )}
 
-          <GoogleLogin
-            clientId={`${process.env.REACT_APP_GOOGLE_CLIENT_ID}`}
-            onSuccess={googleSuccess}
-            onError={googleError}
-            shape='pill'
-            size='large'
-            theme='filled_blue'
-            width='320'
-            text={isSignup ? 'signup_with' : 'signin_with'}
-          />
-
           <Grid container justifyContent='flex-end'>
             <Grid item>
               <Button
